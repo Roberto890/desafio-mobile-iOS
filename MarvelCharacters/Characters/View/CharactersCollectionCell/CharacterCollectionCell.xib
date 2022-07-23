@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="MarvelRegular-Dj83 2.ttf">
+            <string>Marvel-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="carouselViewCell" reuseIdentifier="collectionViewCell" id="MAN-aN-Gfc" customClass="CharacterCollectionCell" customModule="MarvelCharacters" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="300" height="300"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="5xh-ka-FnS">
+                <rect key="frame" x="0.0" y="0.0" width="300" height="300"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SH7-lr-cny">
+                        <rect key="frame" x="0.0" y="0.0" width="300" height="300"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ONW-YH-ysD">
+                                <rect key="frame" x="0.0" y="270" width="300" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="22" id="BaA-Cb-KTj"/>
+                                    <constraint firstAttribute="width" constant="300" id="cXg-7u-vOB"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Marvel-Regular" family="Marvel" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qAg-cG-uu2">
+                                <rect key="frame" x="0.0" y="0.0" width="300" height="255"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="El5-SX-9u1"/>
+                                    <constraint firstAttribute="height" constant="255" id="LI2-Zs-eLq"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.6560357966" green="0.17852634749999999" blue="0.21541764059999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="ONW-YH-ysD" firstAttribute="leading" secondItem="SH7-lr-cny" secondAttribute="leading" id="C1C-DV-Hc1"/>
+                            <constraint firstItem="qAg-cG-uu2" firstAttribute="top" secondItem="SH7-lr-cny" secondAttribute="top" id="XZE-Ps-tdR"/>
+                            <constraint firstItem="ONW-YH-ysD" firstAttribute="top" secondItem="qAg-cG-uu2" secondAttribute="bottom" constant="15" id="eV0-Bo-EV1"/>
+                            <constraint firstAttribute="width" constant="300" id="eqb-l7-ogQ"/>
+                            <constraint firstItem="qAg-cG-uu2" firstAttribute="leading" secondItem="SH7-lr-cny" secondAttribute="leading" id="hVU-uE-Hc7"/>
+                            <constraint firstAttribute="trailing" secondItem="ONW-YH-ysD" secondAttribute="trailing" id="kcy-rw-P0n"/>
+                            <constraint firstAttribute="height" constant="300" id="kgQ-Gu-fk3"/>
+                            <constraint firstAttribute="trailing" secondItem="qAg-cG-uu2" secondAttribute="trailing" id="u4I-Fb-IXG"/>
+                            <constraint firstAttribute="bottom" secondItem="ONW-YH-ysD" secondAttribute="bottom" constant="8" id="zwq-ob-9gI"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" red="0.58039218189999997" green="0.1686274707" blue="0.21568629149999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                <constraints>
+                    <constraint firstItem="SH7-lr-cny" firstAttribute="leading" secondItem="5xh-ka-FnS" secondAttribute="leading" id="WVW-kx-auf"/>
+                    <constraint firstAttribute="bottom" secondItem="SH7-lr-cny" secondAttribute="bottom" id="Xpf-dK-Dq7"/>
+                    <constraint firstAttribute="trailing" secondItem="SH7-lr-cny" secondAttribute="trailing" id="rHC-lF-9x8"/>
+                    <constraint firstItem="SH7-lr-cny" firstAttribute="top" secondItem="5xh-ka-FnS" secondAttribute="top" id="z6v-Ux-9Ak"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <color key="backgroundColor" red="0.58039218189999997" green="0.1686274707" blue="0.21568629149999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <size key="customSize" width="200" height="200"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                    <integer key="value" value="20"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="characterImage" destination="qAg-cG-uu2" id="IlU-oY-d81"/>
+                <outlet property="characterName" destination="ONW-YH-ysD" id="7RN-5c-rBO"/>
+            </connections>
+            <point key="canvasLocation" x="243.47826086956525" y="93.080357142857139"/>
+        </collectionViewCell>
+    </objects>
+</document>
